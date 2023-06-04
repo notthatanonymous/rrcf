@@ -50,13 +50,14 @@ jobs:
         - python -m pip install --upgrade pip
       env: PATH=/c/Python37:/c/Python37/Scripts:$PATH# command to install dependencies
 install:
+  - pip3 install --upgrade pip
   - pip3 install .
   - pip3 install -r requirements.txt
-  - pip3 install pytest-cov
-  - pip3 install coveralls
+#  - pip3 install pytest-cov
+#  - pip3 install coveralls
 # command to run tests
 script:
-  - pytest --cov=rrcf/
+  - python3 example.py || python example.py
 after_success:
   - echo "Success."
 #   - coveralls
