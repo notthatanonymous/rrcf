@@ -1,8 +1,8 @@
 language: python
 jobs:
   include:
-    - name: "Python 3.5 on Xenial linux"
-      python: 3.5
+    - name: "Python 3.8 on Xenial linux"
+      python: 3.8
       os: linux
       dist: xenial
       arch: amd64
