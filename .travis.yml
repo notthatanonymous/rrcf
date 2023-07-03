@@ -35,9 +35,9 @@ jobs:
       python: 3.7
       os: linux
       dist: xenial
-      arch: arm64-graviton2
-      virt: lxd
-      group: edge
+      arch: ppc64le #arm64-graviton2
+      #virt: lxd
+      #group: edge
     - name: "Python 3.7 on macOS"
       os: osx
       osx_image: xcode11.5  # Python 3.7 running on macOS 10.14.4
