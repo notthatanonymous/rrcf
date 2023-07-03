@@ -71,4 +71,4 @@ avg_codisp['in_out_class'] = list(avg_codisp['codisp_score'] > avg_codisp['codis
 avg_outlier_score = (avg_codisp.loc[avg_codisp['in_out_class'] == True, :]['codisp_score'].mean())
 avg_inlier_score = (avg_codisp.loc[avg_codisp['in_out_class'] == False, :]['codisp_score'].mean())
 
-print(avg_outlier_score/avg_inlier_score)
+print(f"\n\n\nScore: {avg_outlier_score/avg_inlier_score}\n\n\n")
